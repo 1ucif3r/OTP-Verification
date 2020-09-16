@@ -15,9 +15,9 @@ def check():
 def sendsms():
     number = x. get()
 
-    client= Client('AC6b44e260c31ad7fa01a4f3b188e9a0b6','6fd040c6f773fc3a0c612da4feeec71e')
+    client= Client('SSID','TOKEN')
 
-    client.messages.create(from_='+12077059229',to=number,body='Your OTP is '+otp)
+    client.messages.create(from_='twilio no',to=number,body='Your OTP is '+otp)
 
     messagebox.showinfo("showninfo","OTP has been sent....")
     root.destroy()
